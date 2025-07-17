@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://xpni.cn',
+  url: 'https://privacy.xpni.cn',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -50,6 +50,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // 移除editUrl，因为我们不需要"编辑此页"链接
           editUrl: undefined,
+          routeBasePath: '/', // 将文档设置为网站的根路径
         },
         blog: {
           showReadingTime: true,
@@ -84,7 +85,8 @@ const config = {
         },
         items: [
           
-          {to: '/docs/privacy-policy', label: '隐私政策', position: 'left'},
+          {to: '/privacy-policy', label: '隐私政策', position: 'left'},
+          {to: '/support', label: '用户支持', position: 'left'},
         ],
       },
       footer: {
@@ -95,7 +97,11 @@ const config = {
             items: [
               {
                 label: '隐私政策',
-                to: '/docs/privacy-policy',
+                to: '/privacy-policy',
+              },
+              {
+                label: '用户支持',
+                to: '/support',
               },
             ],
           },
@@ -105,6 +111,10 @@ const config = {
               {
                 label: '电子邮件',
                 href: 'mailto:sellmycode@163.com',
+              },
+              {
+                label: '电话',
+                href: 'tel:+8615862101692',
               },
             ],
           },

@@ -16,6 +16,7 @@ const sidebars = {
   // 包含现有的文档
   docs: [
     'intro', // 添加intro作为首页
+    'support', // 添加支持页面
     {
       type: 'category',
       label: '用户协议',
