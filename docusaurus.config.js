@@ -86,6 +86,7 @@ const config = {
         items: [
           
           {to: '/privacy-policy', label: '隐私政策', position: 'left'},
+          {to: '/user-agreement', label: '用户协议', position: 'left'},
           {to: '/support', label: '用户支持', position: 'left'},
         ],
       },
@@ -98,6 +99,10 @@ const config = {
               {
                 label: '隐私政策',
                 to: '/privacy-policy',
+              },
+              {
+                label: '用户协议',
+                to: '/user-agreement',
               },
               {
                 label: '用户支持',
