@@ -15,15 +15,10 @@
 const sidebars = {
   // 包含现有的文档
   docs: [
-    'intro', // 添加intro作为首页
-    'support', // 添加支持页面
-    {
-      type: 'category',
-      label: '用户协议',
-      items: [
-        'privacy-policy',
-      ],
-    }
+    'privacy-policy', // 将隐私政策设置为首页
+    'user-agreement', // 用户协议
+    'support', // 支持页面
+    'intro', // 介绍页面
   ]
 };
 

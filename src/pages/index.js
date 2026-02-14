@@ -1,43 +1,13 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            开始使用象皮泥 →
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import { useEffect } from 'react';
+import { useHistory } from '@docusaurus/router';
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`欢迎使用${siteConfig.title}`}
-      description="象皮泥 - 专注于用户体验的应用">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+  const history = useHistory();
+  
+  useEffect(() => {
+    // 重定向到隐私政策页面
+    history.replace('/privacy-policy');
+  }, [history]);
+  
+  return null;
 }
